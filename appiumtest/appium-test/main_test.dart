@@ -7,23 +7,20 @@ void main() {
   setUpAll(() async {
     driver = await createDriver(
         uri: Uri.parse('http://127.0.0.1:4723/wd/hub/'),
-        // desired: {
-        //   'platformName': 'ios',
-        //   'deviceName': 'iPhone 14 Pro Max',
-        //   'browserName': 'Google Chrome',
-        //   'automationName': 'xcuitest',
-        //   'reduceMotion': true,
-        // });
-
         desired: {
-          'platformName': 'ios',
-          'appium:automationName': 'xcuitest',
-          'deviceName': 'iPhone 14 Pro Max',
-         // 'appium:app': 'https://github.com/projectxyzio/webinar-20210630-appium-flutter-driver/blob/master/apps/app-release-with-key-no-ext.apk?raw=true',
+          'platformVersion': '12',
+          'browserName': 'Chrome',
+          'deviceName': "Emulator_12",
+          'platformName': 'Android',
+          'useNewWDA': 'true',
           'appium:appPackage': 'com.example.appiumtest',
+          'appium:automationName': 'uiautomator',
+          // 'appium:automationName': 'xcuitest',
+         // 'appium:app': 'https://github.com/projectxyzio/webinar-20210630-appium-flutter-driver/blob/master/apps/app-release-with-key-no-ext.apk?raw=true',
           'appium:fullReset': true,
           'reduceMotion': true,
         });
+    print(driver.status);
   });
 
   tearDownAll(() async {
