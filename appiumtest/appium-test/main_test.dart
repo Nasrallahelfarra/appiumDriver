@@ -15,7 +15,7 @@ void main() {
           'appium:appPackage': 'com.example.appiumtest',
           'appium:automationName': 'uiautomator2',
           // 'appium:automationName': 'xcuitest',
-         'appium:app': 'https://github.com/projectxyzio/webinar-20210630-appium-flutter-driver/blob/master/apps/app-release-with-key-no-ext.apk?raw=true',
+         //'appium:app': 'https://github.com/projectxyzio/webinar-20210630-appium-flutter-driver/blob/master/apps/app-release-with-key-no-ext.apk?raw=true',
           'appium:fastReset': true,
           'reduceMotion': true,
         });
