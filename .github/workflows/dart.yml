@@ -6,7 +6,7 @@
 name: Dart
 on:
   push:
-    branches: [ "ibrahim" ]
+    branches: [ "master" ]
 
 jobs:
   build:
